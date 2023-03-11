@@ -3,7 +3,7 @@
 
 # exlclude eclipse directories
 /.settings
-/target
+
 
 # Log file
 *.log
