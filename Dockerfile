@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 ENV JAVA_HOME=/uo1/middleware/jdk-11.0.1
 ENV TOMCAT_HOME=/u01/middleware/apache-tomcat-9.0.71
 ENV PATH=$PATH:$JAVA_HOME/bin:$TOMCAT_HOME/bin
-RUN mkdir -p /uo1/middleware
+RUN mkdir -p /u01/middleware
 WORKDIR /u01/middleware
 ADD https://builds.openlogic.com/downloadJDK/openlogic-openjdk-jre/11.0.18+10/openlogic-openjdk-jre-11.0.18+10-linux-x64.tar.gz
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.71/bin/apache-tomcat-9.0.71.tar.gz
