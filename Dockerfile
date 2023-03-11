@@ -11,3 +11,6 @@ RUN tar -xzvf apache-tomcat-9.0.71.tar.gz .
 RUN rm -rf openlogic-openjdk-jre-11.0.18+10-linux-x64.tar.gz
 RUN rm -rf apache-tomcat-9.0.71.tar.gz
 COPY target/speed.tar apcache-tomcat-9.0.71/webapps
+COPY ./run.sh .
+CMD ["./run.sh"]
+ENTRIPOINT ["tail","-f","dev/null"]
